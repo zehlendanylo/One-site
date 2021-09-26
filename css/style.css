@@ -1,4 +1,4 @@
-body {
+body, html {
     font-family: 'Arimo', sans-serif;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden; 
@@ -63,6 +63,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+	flex-wrap: wrap;
 }
     .navigation-item {
     padding: 29px 27px 29px 36px;
@@ -178,124 +179,65 @@ body {
 
 /* Here BG background banner+ color gradient */
 
+.bg-image {
+    background: url(../img/bg.jpg) center center/cover no-repeat;
+    background-position-x: 10%;
+}
+
 .first-banner {
     width: 100%;
     height: 750px;
     background: url(../img/header-BG.jpg) center center/cover no-repeat;
 }
-
-
-    /* Here Styling Contact Us Page  */
-
-    .cu-hero {
-        height: 520px;
-        background: url(../img/header-BG-contact.jpg) center center/cover no-repeat;
-    }
-    
-
-
 .first-banner-color {
     background: linear-gradient(45deg, #404040, rgba(84, 84, 84, 0.1));
     width: 100%;
     height: 750px;
 }
-
-    /* Here Styling Contact Us Page  */
-    
-    .hero-gradient {
-        background: rgba(64, 64, 64, 0.6);
-        height: 520px;  
-    }
-
 .fixed-banner-conteiner {
     padding-top: 270px;
     width: 510px;
     position: relative;
 }
 
-
-/* Here fixing class in the center of the title for other pages */
-
-    .other-pages-container {
-        margin: 0 auto;
-        text-align: center;
+    .main-decor-el-one {
+        display: block;
+        position: absolute;
+        left: -1.2rem;
+        top: 16.1rem;
+        width: 80px;
+        height: 80px;
+        border-top: 3px solid red;
+        border-left: 3px solid red;
+    }   
+    .textArimo {
+        font-family: Arimo;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.13;
+        letter-spacing: normal;
+        color: #fff;
+        margin-top: 42px;
     }
-
-
-.main-decor-el-one {
-    display: block;
-    position: absolute;
-    left: -1.2rem;
-    top: 16.1rem;
-    width: 80px;
-    height: 80px;
-    border-top: 3px solid red;
-    border-left: 3px solid red;
-} 
-
-    .mdel-other-page {
-        left: 2rem;
+    .main-title {
+        font-family: Raleway;
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: normal;
+        color: #fff;
     }
-
-.textArimo {
-    font-family: Arimo;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.13;
-    letter-spacing: normal;
-    color: #fff;
-    margin-top: 37px;
-}
-.main-title {
-    font-family: Raleway;
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: normal;
-    color: #fff;
-    padding-bottom: 5px;
-}
-    .main-title > span {
-        font-weight: normal;  
-    }
-.main-title > span::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 21.5rem;
-    left: 13.3rem;
-    width: 80px;
-    height: 80px;
-    border: 3px solid red;
-}
-
-/* Here Alig for H1 other pages and customizing the psevdoitem   */
-    
-    .other-pages-alig {
-        text-align: center;
-        position: relative;
-    }
-    .other-pages-alig > a:last-child {
-        padding-left: 28px;
-        color: red;
-    }
-
-    .other-pages-alig > a:last-child:hover {
-        color: white;
-    }
-    .other-pages-alig > a:first-child::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0.2rem;
-    left: 9.5rem;
-    width: 15px;
-    height: 12px;
-    background: url(../icons/home-ic.svg) center center/cover no-repeat;
-    
-    }
-    .other-pages-alig > span::after {
-        top: -8px;
-        left: 23.3rem;
+        .main-title > span {
+            font-weight: normal;  
+        }
+    .main-title > span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 21.5rem;
+        left: 13.3rem;
+        width: 80px;
+        height: 80px;
+        border: 3px solid red;
     }
 
 /* HERE Button */
@@ -351,70 +293,86 @@ body {
 
 .dec-container {
   position: relative; 
-  margin-top: 24px;
-  
+  margin-top: 25px;
 }
-
-    .dec-other-pg {
-        margin-top: 139px;
+    .dec-elem {
+        position: absolute;
+        width: 1157px;
+        height: 20px;
+        background: #fff;
+        transform: skew(50deg, 0deg);
+        left: 3rem;
     }
-
-.dec-elem {
-    position: absolute;
-    width: 1157px;
-    height: 20px;
-    background: #fff;
-    transform: skew(50deg, 0deg);
-    left: 3rem;
-}
-.dec-elem::before {
-    content: '';
-    position: absolute;
-    width: 91px;
-    height: 20px;
-    background: #fff;
-    bottom: 99%;
-    left: -3.7rem;
-    transform: skew(-68deg, 0deg);
-    top: 0rem;
-}
-
+    .dec-elem::before {
+        content: '';
+        position: absolute;
+        width: 91px;
+        height: 20px;
+        background: #fff;
+        bottom: 99%;
+        left: -3.7rem;
+        transform: skew(-68deg, 0deg);
+        top: 0rem;
+    }
 
 
   /* Here Center content section   */
 
   .flex-container {
       display: flex;
-      justify-content: space-between;
-      margin-top: 63px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 21px;
+        margin-top: 60px;
   }
 
-  .flex-wrap {
-      flex-wrap: wrap;
-  }
+  
+    .flex-item-one {
+   order: 1;
+    flex: 0 1 67%;
+    align-self: center;
+    }
+    
+    .flex-item-two {
+    order: 2;
+    flex: 0 1 31%;
+    align-self: auto;
+    }
 
-  .flex-wrap::before {
-    top: 23rem;
-  }
+    .sectionnnn  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
 
-  .flex-container::after {
-      content: "";
-      background: url(../img/BG-dec-img1.png) center center/cover no-repeat;
-      width: 400px;
-      height: 639px;
-      position: absolute;
-      left: -455px;
-      top: -30px;
-  }
+    .flex-item-img-one {
+    order: 1;
+    flex: 0 1 40%;
+    align-self: center;
+    }
 
-  .flex-container::before {
-    content: "";
-    background: url(../img/BG-dec-img2.png) center center/cover no-repeat;
-    width: 531px;
-    height: 432px;
-    position: absolute;
-    right:-595px;
-}
+    .flex-item-img-second {
+        order: 2;
+        flex: 0 2 40%;
+        align-self: auto;
+        }
+
+    .flex-item-img-three {
+        order: 3;
+        flex: 0 1 auto;
+        align-self: auto;
+        }
+
+    .flex-wrap::before {
+        top: 23rem;
+  }
 
   /* Here Two Image btn + Descr */
 
@@ -499,13 +457,13 @@ body {
     height: 498px;
     display: inline-block;
     background-color:#F8F9FA;
-    border: 1px solid #DDDDDD;
+    border: 2px solid #DDDDDD;
     position: relative;
 }
     .form-container {
         margin: 0 auto;
         margin-top: 41px;
-        width: 300px;
+        width: 85%;
     }
         .form-title {
             font-family: Raleway;
@@ -518,6 +476,8 @@ body {
             }
         .form-descr {
             margin-top: 27px;
+            color: #404040;
+
         }
 
 /* Here Styling Form */
@@ -531,7 +491,7 @@ body {
     .form-input {
         width: 100%;
         height: 44px;
-        border: 1px solid #DDDDDD;
+        border: 2px solid #DDDDDD;
         margin-top:17px ;
         padding-left: 14px;
         font-family: Arimo;
@@ -566,75 +526,6 @@ body {
         bottom: 0;
     }
 
-
-    /* Here new styling for Contact us page  */
-
-
-.title-ctc-page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.dec-or-line {
-    width: 100%;
-    color: #DDDDDD;
-    opacity: 0.2;
-}
-
-.ctc-container {
-    display: flex;
-    justify-content:left;
-    margin-top: 51px;
-} 
-    .ctc-block{
-        display: flex;
-        align-items: center;
-        width: 65px;
-        height: 65px;
-        background-color: #F8F9FA;
-        border: 1px solid #DEDEDE;
-    }
-    .ctc-block > img {
-        display: block;
-        margin: 0 auto;  
-    }
-    .ctc-container > .textArimo {
-        margin: 25px 0 0 10px;
-        color: #404040;
-    }
-
-    .ctc-container > a:hover {
-        color: red;
-    }
-
-.title-ctc-page > .form-title {
-    padding: 0 50px 0 50px;
-    font-size: 43px;
-    white-space: nowrap;
-} 
-
-.form_img {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 67px;
-    margin-top: 60px;
-}
-
-.form_img > .form-block {
-    width:561px;
-    height: 595px;
-}
-.form_img > .form-block > .form-container {
-    width: 475px;
-}
-.form_img > .form-block > .form-container > .form > .form-input:first-child {
-    margin-top: 31px;
-}
-
-
-
 /* Here footer */
 
 .footer-bg {
@@ -657,6 +548,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
     .logo-footer-descr {
@@ -725,16 +617,6 @@ body {
             transform: rotate(-100grad);
         }
 
-        /* Here for other page */
-
-        .other-pages-alig > a::before {
-            position: absolute;
-            left: 14.7rem;
-            top: 5px
-        }
-
-
-
     .contact-block-footer {
         position: relative;
     }
@@ -767,7 +649,7 @@ body {
 
 .coryrt-dec-elem {
     height: 40px;
-    top: 4rem;
+    top: 4.2rem;
 }
 
 .coryrt-dec-elem::before {
@@ -784,7 +666,7 @@ body {
         color: #404040;
     }
 
-    @media (max-width: 360px) { 
+@media (max-width: 360px) { 
     
     body {
         max-width: 360px;
