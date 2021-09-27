@@ -107,8 +107,6 @@ body, html {
         top: 5.39rem;
         visibility:hidden;
         opacity: 0;
-
-
     }
 
     .navigation-item:nth-last-child(n+4):hover::after {
@@ -338,8 +336,6 @@ body, html {
         height: 80px;
         border: 3px solid red;
     }
-
-
     .other-pages-alig > span::after {
     top: -8px;
     left: 23.3rem;
@@ -420,7 +416,7 @@ body, html {
         top: 0rem;
     }
     .dec-other-pg {
-    margin-top: 139px;
+    margin-top: 112px;
 }
 
   /* Here Center content section   */
@@ -437,7 +433,7 @@ body, html {
 
   
     .flex-item-one {
-   order: 1;
+    order: 1;
     flex: 0 1 67%;
     align-self: center;
     }
@@ -448,7 +444,7 @@ body, html {
     align-self: auto;
     }
 
-    .sectionnnn  {
+    .flex-sec-container  {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -488,7 +484,7 @@ body, html {
             flex-wrap: wrap;
         }
 
-        .two-img-btn > div:hover > .gradient-img-btn {
+        .flex-item-one > div:hover > .gradient-img-btn {
             background: linear-gradient(0grad, rgba(138, 1, 1, 0.5), rgba(255, 0, 0, 0.1));
         }
             .gradient-img-btn {
