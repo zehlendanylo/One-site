@@ -179,6 +179,7 @@ body, html {
 .bg-image {
     background: url(../img/bg.jpg) center center/cover no-repeat;
     background-position-x: 10%;
+    margin-bottom: 63px;
 }
 
 .first-banner {
@@ -267,11 +268,7 @@ body, html {
         color: red;
     }
 
-    .other-pages-alig > a:last-child:hover {
-						
-						 
-						  
-							   
+    .other-pages-alig > a:last-child:hover {					   
         color: white;
 						 
     }
@@ -376,6 +373,7 @@ body, html {
     width: 60px;
     margin: 0 auto;
     margin-top: 95px;
+    margin-bottom: 35px;
 }
     .switch-squares {
         background-color: #fff;
@@ -393,8 +391,8 @@ body, html {
 /* Here Decorative Element */
 
 .dec-container {
-  position: relative; 
-  margin-top: 35.6px;
+  position: relative;
+  
 }
     .dec-elem {
         position: absolute;
@@ -698,7 +696,7 @@ body, html {
 /* Here footer */
 
 .footer-bg {
-    margin-top: 63px;
+    /* margin-top: 63px; */
     width: 100%;
     Height: 420px;
     background: url(../img/footer-BG.jpg) center center/cover no-repeat;
@@ -827,7 +825,7 @@ body, html {
 
 .coryrt-dec-elem {
     height: 40px;
-    top: 3.4rem;
+    top: 5.7rem;
 }
 
 .coryrt-dec-elem::before {
@@ -853,10 +851,6 @@ body, html {
         flex-direction: column;
         gap: 25px;
         flex: 0 1 50%;
-    }
-
-    .descr-block > p {
-    color: #404040
     }
     .item-block {
        display: flex; 
@@ -898,6 +892,7 @@ body, html {
         background-color: #FDFDFE;
         border: 1px solid #DEDEDE;
         margin-top: 85px;
+        padding-bottom: 67px;
     }
     
     .gs-title-text {
@@ -914,3 +909,107 @@ body, html {
     .blackArimo {
         color: #404040;
     }
+
+    .as-gs-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 63px;
+        margin-top: 32px;
+    }
+    .as-gs-flex > .flex-container > button {
+        margin-top: 30px;
+    }
+    .as-gs-flex > .flex-container {
+        margin-top: 0;
+        align-content: flex-start ;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .red-strip {
+        display: inline-block;
+        width: 54px;
+        height: 3px;
+        background-color: #FF0000;
+    }
+    .sub-title {
+        font-size: 43px;
+    }
+
+    .advantages-flex-cont {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 118px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .advantages-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .item-one {
+        background: url(../img/adv-1.jpg) center center/cover no-repeat;
+        padding: 10px 20px ;
+    }
+    .item-one:nth-child(2) {
+       background: url(../img/adv-2.jpg) center center/cover no-repeat; 
+    }
+    .item-one:nth-child(3) {
+       background: url(../img/adv-3.jpg) center center/cover no-repeat; 
+    }
+    .item-one:nth-child(4) {
+       background: url(../img/adv-4.jpg) center center/cover no-repeat; 
+    }
+
+    .adv-descr-ico {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items:center;
+    }
+    .adv-descr-ico > h4 {
+        font-size: 40px;
+    }
+
+    .contact-people {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        margin-top: 40px;
+
+    }
+    .social-media {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media > a {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        border: 1px solid #DEDEDE;
+        background-color: #F8F9FA;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .social-media > a:hover {
+        border: 1px solid #FF0000;
+    }
+
+.au-dec-el {
+    background: #FDFDFE;
+
+}
+.footer-gb {
+    border-bottom:none;
+}
