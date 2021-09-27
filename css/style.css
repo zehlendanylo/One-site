@@ -1021,3 +1021,57 @@ body, html {
 .sponsor-link:hover {
     opacity: 1.0;
 }
+
+.ot-hero {
+   background: url(../img/OurTeamBanner.jpg) center center/cover no-repeat;
+}
+
+.bl-bg {
+    background: url(../img/ot-block-bg.jpg) center center/cover no-repeat;
+    padding: 36px 90px;
+    margin-top: 30px;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+    gap: 60px;
+    padding: 35px 0 35px;
+}
+.gy-secn-descr {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.gy-secn-point {
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    padding: 25px 0;
+}
+.gy-secn-point > .item:nth-last-child(2) {
+    margin-left: 20px;
+}
+
+.gy-secn-descr > .social-media {
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: center;
+}
+.gy-secn-descr > .social-media > a {
+    margin: 0;
+}
+
+.gy-secn-descr > .form-title {
+    margin-left: 10px;
+    position: relative;
+}
+
+.gy-secn-descr > .form-title::before {
+    content: '';
+    display: block;
+    width: 49px;
+    height: 62px;
+    border: 3px solid red;
+    border-right: none;
+    position: absolute;
+    top: -12px;
+    left: -10px;
+}
