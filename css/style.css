@@ -1013,3 +1013,11 @@ body, html {
 .footer-gb {
     border-bottom:none;
 }
+
+.sponsor-link {
+    opacity: 0.5;
+}
+
+.sponsor-link:hover {
+    opacity: 1.0;
+}
