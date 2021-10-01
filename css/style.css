@@ -179,7 +179,7 @@ body, html {
 .bg-image {
     background: url(../img/bg.jpg) center center/cover no-repeat;
     background-position-x: 10%;
-    margin-bottom: 63px;
+    background-size: 100%;
 }
 
 .first-banner {
@@ -192,6 +192,10 @@ body, html {
     .cu-hero {
         height: 520px;
         background: url(../img/header-BG-contact.jpg) center center/cover no-repeat;
+    }
+
+    .op-hero {
+        background: url(../img/service-h-banner.jpg) center center/cover no-repeat;
     }
 .first-banner-color {
     background: linear-gradient(45deg, #404040, rgba(84, 84, 84, 0.1));
@@ -214,12 +218,6 @@ body, html {
 
 
 /* Here fixing class in the center of the title for other pages */
-
-    .other-pages-container {
-        margin: 0 auto;
-        text-align: center;
-    }
-
 
 .main-decor-el-one {
     display: block;
@@ -344,22 +342,24 @@ body, html {
     margin-top: 62px;
     padding: 0px 36px 0 36px;
     background-color: #f00;
-    border-radius: none;
-    border: none;
+    border-radius: 0;
     font-family: Arimo;
     font-size: 16px;
-    font-weight: 500;
     color: #fff;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
 }
     .main-btn > span {
         position: relative;
         right: -36px;
-        display: inline-block;
         background-color: rgba(255, 255, 255, 0.3);
         width:47px;
         height: 47px;
-        padding-top: 14px;
+        justify-content: center;
+        display: flex;
+        align-items: center
     }
 .main-btn:hover {
     background-color: rgb(204, 0, 0);
@@ -423,10 +423,11 @@ body, html {
       display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-content: center;
         gap: 21px;
         margin-top: 60px;
+        margin-bottom: 60px;
   }
 
   
@@ -482,7 +483,7 @@ body, html {
             flex-wrap: wrap;
         }
 
-        .flex-item-one > div:hover > .gradient-img-btn {
+        .gradient-img-btn:hover {
             background: linear-gradient(0grad, rgba(138, 1, 1, 0.5), rgba(255, 0, 0, 0.1));
         }
             .gradient-img-btn {
@@ -505,7 +506,6 @@ body, html {
                     .img-btn-item {
                         width: 300px;
                         height: 66px;
-                        margin: 0.1px 3px 0 3px;
                         background-color: rgba(255, 0, 0, 0.3);
                         margin: 0 auto;
                         position: absolute;
@@ -513,7 +513,7 @@ body, html {
                         left: 0;
                         right: 0;
                     }
-                        .img-btn-item > h3 {
+                        .category-title {
                             margin-top: 18px;
                             text-align: center;
                             font-family: Arimo;
@@ -530,7 +530,6 @@ body, html {
                             height: 60px;
                             border-top: 3px solid red;
                             border-left: 3px solid red;
-                            border-bottom: 3px solid red;
                             position: absolute;
                             
                         }
@@ -645,6 +644,8 @@ body, html {
     display: flex;
     justify-content:left;
     margin-top: 51px;
+    align-items: center;
+    gap: 19px;
 } 
     .ctc-block{
         display: flex;
@@ -653,16 +654,8 @@ body, html {
         height: 65px;
         background-color: #F8F9FA;
         border: 1px solid #DEDEDE;
+        justify-content: center;
     }
-    .ctc-block > img {
-        display: block;
-        margin: 0 auto;  
-    }
-    .ctc-container > .textArimo {
-        margin: 25px 0 0 10px;
-        color: #404040;
-    }
-
     .ctc-container > a:hover {
         color: red;
     }
@@ -891,8 +884,6 @@ body, html {
     .grey-section {
         background-color: #FDFDFE;
         border: 1px solid #DEDEDE;
-        margin-top: 85px;
-        padding-bottom: 67px;
     }
     
     .gs-title-text {
@@ -999,7 +990,7 @@ body, html {
         height: 55px;
         border: 1px solid #DEDEDE;
         background-color: #F8F9FA;
-        margin: 0 auto;
+        margin: 0 15px;
         padding: 15px;
     }
     .social-media > a:hover {
@@ -1029,7 +1020,7 @@ body, html {
 .bl-bg {
     background: url(../img/ot-block-bg.jpg) center center/cover no-repeat;
     padding: 36px 90px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .no-wrap {
     flex-wrap: nowrap;
@@ -1074,4 +1065,405 @@ body, html {
     position: absolute;
     top: -12px;
     left: -10px;
+}
+
+.category-project  {
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: #F8F9FA;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 68px
+
+}
+
+
+.category-project > .navigation-item:last-child {
+border-right: none;
+}
+
+.category-project > .navigation-item:nth-last-child(n+4)::after {
+    visibility: hidden;
+}
+
+.category-project > .navigation-item {
+    padding: 22px 46px 22px 53px;
+}
+
+.category-project > .navigation-item:nth-last-child(-n+3)::after {
+    visibility: hidden;
+}
+
+.project {
+    gap: 26px;
+}
+
+.project > .img-btn {
+    width: 583px;
+    height: 325px;
+}
+
+.project > .img-btn > .gradient-img-btn {
+    width: 583px;
+    height: 325px;
+}
+
+.decor {
+    display: inline-block;
+    width: 42px;
+    height: 100%;
+    border-left: 3px solid #FF0000;
+    border-top: 3px solid #FF0000;
+    border-bottom: 3px solid #FF0000;
+}
+.img-btn-descr {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    display: inline-flex;
+    width: 583px;
+    height: 325px;
+    background: linear-gradient(0grad, rgba(84, 84, 84, 0.8), rgba(84, 84, 84, 0.1));
+    position: relative;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+}
+.category > .category-name > .img-btn-descr > .category-title {
+    margin-top: 5px;
+}
+
+.category-name {
+    height: 77px;
+    background-color: rgba(255, 0, 0, 0.3);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-name > span:last-child {
+    border-left: none;
+    border-right: 3px solid #FF0000;
+}
+
+.project-bg-one {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.project-bg-second {
+    background: url(../img/project-bg-second.jpg) center center/cover no-repeat;
+}
+
+.project-bg-three {
+    background: url(../img/project-bg-three.jpg) center center/cover no-repeat;
+}
+
+.project-bg-four {
+    background: url(../img/project-bg-four.jpg) center center/cover no-repeat;
+}
+
+.project-bg-five {
+    background: url(../img/project-bg-four.jpg) center center/cover no-repeat;
+}
+
+.project-bg-six {
+    background: url(../img/project-bg-four.jpg) center center/cover no-repeat;
+}
+
+
+.examplePP-hero {
+    background: url(../img/ExamplePageProject-hero.jpg) center center/cover no-repeat;
+}
+
+.h111111111111 {
+    position: relative;
+}
+
+
+.flexxxx {
+    display: flex;
+    justify-content: center;
+}
+
+.title-block {
+    margin-top: 258px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-other-pg {
+    display: inline-flex;
+    position: relative;
+    flex-direction: row;
+    margin: 0;
+    
+}
+
+
+.dec-elem-left {
+    display: inline-block;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -20px;
+    bottom: 0px;
+}
+.dec-elem-right {
+    display: inline-block;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+    right: -14px;
+    bottom: 0px;
+}
+
+.title-other-pg > span {
+    margin: 0 11px 0 11px;
+}
+
+.other-pages-alig {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px
+}
+.link-other-pg {
+    margin-top: 20px;
+}
+
+.link-other-pg > a {
+    margin: 0 10px 0 10px;
+}
+.link-other-pg > a:last-child {
+    color: red;
+}
+.link-other-pg > a:last-child:hover {
+    color: white;
+}
+
+.link-other-pg > a:hover {
+    color:red;
+}
+
+
+
+/* !ExamplePageProject style */
+
+
+.big-img-slider {
+    width: 100%;
+    height: 620px;
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.switch-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.switch-slider > .decor-switch > .dec-sw-prew:hover {
+    background-color: rgba(148, 1, 1, 0.7);
+}
+
+.decor-switch {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color : rgba(255, 255, 255, 0.4);
+    left: -53px;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+}
+.dec-sw-prew {
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.dec-sw-prew:last-child {
+    transform: rotate(180deg);
+}
+
+.decor-switch > a > img {
+    transform: rotate(180deg);
+}
+
+.switch-three-img {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+.switch-three-img > a {
+    display: flex;
+}
+.switch-three-img > a > img {
+    width: 160px;
+    outline: 7px solid white;
+}
+
+.switch-three-img > a:hover{
+    outline: 2px solid rgb(255, 0, 0);
+}
+
+
+/* !Here styles blokc content */
+
+/* *Here styles left blokc  */
+.block-content {
+    margin-top: 45px;
+    display: flex;
+    gap: 40px;
+}
+
+.content-block-left {
+    width: 55%;
+}
+.blockleft-img {
+    display: flex;
+    gap: 20px;
+}
+.blockleft-img > img {
+    width: 300px;
+}
+.content-block-left > .descr-block {
+    margin-bottom: 20px;
+}
+
+/* *Here styles right blokc  */
+
+.content-block-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.cbr-grey-block {
+    background-color: #F8F9FA;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #DEDEDE;
+}
+
+.cbr-pj-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-ithem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.info-ithem > h4 {
+    font-size: 20px;
+}
+
+
+.cbr-icon {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dec-line {
+    width: 100%;
+    height: 1px;
+    background-color: #DEDEDE;
+}
+
+.cto-block {
+    background: url(../img/ex-project.jpg) center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 53px 0;
+}
+
+.cto-block > h3 {
+    color: white;
+    margin-top: 10px;
+}
+.cto-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 83px;
+}
+.cto-contact > .ctc-container > .ctc-block {
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+}
+.prew-project {
+    background-color: #F8F9FA;
+    width: 179px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prew-project:hover {
+    background-color:rgba(138, 1, 1, 0.5);
+    color: white;
+}
+
+.dec-sw-prew > svg  {
+    transform: rotate(180deg);
+}
+
+.prew-project > h5 {
+    font-weight: 600;
+    padding: 12px 14px;
+}
+
+.prew-project > h5:hover {
+    color: white;
+}
+
+.decor-line-switch {
+    display: flex;
+    align-items: center;
+}
+
+.grey-ithem {
+    width: 100px;
+    height: 1px;
+    background-color: #DEDEDE;
+}
+.red-ithem {
+    width: 40px;
+    height: 1px;
+    background-color: red;
 }
