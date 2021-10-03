@@ -350,6 +350,7 @@ body, html {
     display: flex;
     align-items: center;
     border: 0;
+    height: 47px;
 }
     .main-btn > span {
         position: relative;
@@ -1097,6 +1098,7 @@ border-right: none;
 
 .project {
     gap: 26px;
+    position: relative;
 }
 
 .project > .img-btn {
@@ -1466,4 +1468,63 @@ border-right: none;
     width: 40px;
     height: 1px;
     background-color: red;
+}
+
+/* !Here styles Our Service */
+
+.red-ico-block {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.service-descr {
+    background-color: #F8F9FA;
+    border: 1px solid #DEDEDE;
+    position: absolute;
+    bottom: -85px;
+    width: 90%;
+    padding: 0 20px 20px 20px;
+
+}
+.service-descr > p {
+    text-align: center;
+    margin-top: 20px;
+}
+.service-addit {
+    padding: 41px 20px;
+}
+
+.service-row-gap {
+    row-gap: 110px;
+}
+.service-one {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.service-second {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.service-three {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.service-four {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.service-five {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
+}
+
+.service-six {
+    background: url(../img/project-bg-one.jpg) center center/cover no-repeat;
 }
