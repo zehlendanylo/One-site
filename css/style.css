@@ -1474,6 +1474,8 @@ border-right: none;
 
 .red-ico-block {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 73px;
     height: 73px;
     background-color: red;
