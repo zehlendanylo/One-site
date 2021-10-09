@@ -2,7 +2,10 @@
 
 
 @media only screen and (max-width: 1024px){
-   .container {
+   
+    /* !Home Page */
+   
+    .container {
       width: 730px;;
     }
     .navigation-item {
@@ -27,6 +30,24 @@
     .coryrt-dec-elem {
         top: 3.4rem;
     }
+
+    /* !Our Team Page */
+
+    .cnt-descr-img > img {
+        width: 375px;
+        height: 410px;
+    }
+    .sub-title {
+        white-space: nowrap;
+        font-size: 36px;
+    }
+    .gy-secn-descr > .form-title::before {
+        height: 52px;
+        top: -10px;
+    }
+    .stefan-descr {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 950px){
@@ -37,11 +58,36 @@
        width: 510px;
        padding-top: 271px;
     }
+
+    /* !Our Team Page */
+
+    .sub-title {
+        white-space: normal;
+    }
+
+    .link-other-pg {
+        margin-top: 9px;
+    }
+    .title-block {
+        margin-top: 288px;
+    }
+
+    .contact-descr-block > h3 {
+        margin: 1px;
+    }
+
+    .csssssss {
+        flex-direction: column;
+    }
+    
+
 }
 
 @media only screen and (max-width: 480px),
 (max-width: 950px) {
    
+    /* !Here Home Page */
+
     .flex-item-two {
         flex: 0 1 100%;
     }
@@ -265,6 +311,27 @@
     }
 
     /* !footer dec element */
+
+
+    /* !Here Our Team Page Styling */
+
+    .bl-bg {
+        text-align: center;
+    }
+    .cnt-descr-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gy-secn-descr {
+        align-items: center;
+        text-align: center;
+    }
+    .flex-container {
+        margin-top: 40px;
+    }
+    .bg-image {
+        background: none;
+    }
 
 }
 @media only screen and (max-width: 768px){
@@ -498,7 +565,28 @@
     
     /* /form */
     
-    /* /here section */
+    /* !Here Our Team Page  */
+
+    .dec-elem-right {
+        width: 60px;
+        height: 60px;
+    }
+    .dec-elem-left {
+        width: 60px;
+        height: 60px;
+    }
+    .sub-title {
+        margin-top: 5px;
+    }
+    
+    .ot-hero {
+        background: url(../img/mob-adapt-banners/Our-Team.jpg) center center/cover no-repeat;
+    }
+
+    .red-sub-title {
+        margin-top: 1px;
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 400px){
