@@ -739,6 +739,12 @@
    .cbr-pj-info {
        align-items: flex-start;
        gap: 20px;
+       flex-direction: column;
+   }
+
+   .dec-elem-left {
+       left: 35px;
+       right : 3px;
    }
 }
 
