@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>STS Structural Engineering Business</title>
 </head>
@@ -13,70 +14,76 @@
   
   <!-- Here Heder -->
 
-    <header>
+<header>
 
-        <div class="header-bg-block">
-            <div class="container">
-                <div class="nav-set">
-                    
-                    <!-- Here Logo -->
-    
-                        <a href="./index.html" class="logo"><img src="./img/Logo.svg" alt="logo" width="162px" height="85px"><a>
-        
-                    <!-- Here Menu -->
-        
-                    <nav role="navigation">
-                        <ul class="navigation">
-                            <li class="navigation-item"><a href="./index.html">Home</a></li>
-                            <li class="navigation-item"><a href="./OurTeam.html">About Us</a></li>
-                            <li class="navigation-item"><a href="./OurService.html">What We Do</a>
-                    
-                                <!-- Here menu dropdown -->
-                    
-                                <!-- <ul class="item-dropdown">
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                    </ul>
-                                         -->
-                            </li>
-                            <li class="navigation-item"><a href="./OurProject.html">Portfolio</a>
-                    
-                                <!-- Here  menu  dropdown -->
-                    
-                                <!-- <ul class="item-dropdown">
-                                                        <li><a href="./OurProject.html">Our Project</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                    </ul> -->
-                    
-                            </li>
-                            <li class="navigation-item"><a href="./ContactUs.html">Contact Us</a>
-                    
-                                <!-- Here  menu  dropdown -->
-                    
-                                <ul class="item-dropdown">
-                                    <li><a href="./AboutUs.html">About Us Page</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Services</a></li>
-                                </ul>
-                    
-                            </li>
-                        </ul>
-                    </nav>
+    <div class="header-bg-block">
+        <div class="container">
+            <div class="nav-set">
 
-                </div> 
-            </div> 
+                <!-- Here Logo -->
+
+                <a href="#" class="logo"><img src="./img/Logo.svg" alt="logo"><a>
+
+                        <!-- Here Menu -->
+
+                        <nav class="nav" role="navigation">
+                            <ul class="navigation">
+                                <li class="navigation-item"><a href="./index.html">Home</a></li>
+                                <li class="navigation-item"><a href="./OurTeam.html">About Us</a></li>
+                                <li class="navigation-item"><a href="./OurService.html">What We Do</a>
+
+                                    <!-- Here menu dropdown -->
+
+                                    <!-- <ul class="item-dropdown">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                         -->
+                                </li>
+                                <li class="navigation-item"><a href="./OurProject.html">Portfolio</a>
+
+                                    <!-- Here  menu  dropdown -->
+
+                                    <!-- <ul class="item-dropdown">
+                                        <li><a href="./OurProject.html">Our Project</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul> -->
+
+                                </li>
+                                <li class="navigation-item"><a href="./ContactUs.html">Contact Us</a>
+
+                                    <!-- Here  menu  dropdown -->
+
+                                    <ul class="item-dropdown">
+                                        <li><a href="./AboutUs.html">About Us Page</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Here Burger -->
+
+                        <div class="here-burger burger">
+                            <span class=" burger-middel-line"></span>
+                        </div>
+
+            </div>
         </div>
+    </div>
 
-  </header>  
+</header>
 
-  <main>
+<main>
 
     <!-- Here Section Banner + Decor Element -->
 
-      <section>
-          <div class="first-banner cu-hero">
+    <section>
+        <div class="first-banner cu-hero">
             <div class="first-banner-color hero-gradient">
                 <div class="container">
 
@@ -110,14 +117,14 @@
                     </div>
                 </div>
             </div>
-          </div>
-      </section>
+        </div>
+    </section>
 
     <!-- Here Main Content section -->
 
-      <section class="bg-image">
+    <section class="bg-image">
         <div class="container">
-            <div class="flex-container column-gap">
+            <div class="flex-container">
                 
                 <!-- Here Title + contact mini bloks -->
                 
@@ -127,20 +134,25 @@
                     <h2 class="form-title">Get In<span>Touch</span></h2>
                     <hr class="dec-or-line">
                 </div>
-
-                <div class="ctc-container">
-                    <div class="ctc-block">
-                        <img src="./icons/phone-icon.svg" alt="phone">
+                
+                
+                <div class="contact-items">
+                    <div class="ctc-container">
+                        <div class="ctc-block">
+                            <img src="./icons/phone-icon.svg" alt="phone">
+                        </div>
+                        <a href="tel:+2513411140" class="textArimo blackArimo big-font-size">251-341-1140</a>
                     </div>
-                    <a href="tel:+2513411140" class="textArimo blackArimo big-font-size">251-341-1140</a>
+                    
+                    <div class="ctc-container">
+                        <div class="ctc-block">
+                            <img src="./icons/email-icon.svg" alt="email">
+                        </div>
+                        <a href="info@gmail.com" class="textArimo blackArimo big-font-size">info@email.com</a>
+                    </div>
                 </div>
 
-                <div class="ctc-container">
-                    <div class="ctc-block">
-                        <img src="./icons/email-icon.svg" alt="email">
-                    </div>
-                    <a href="info@gmail.com" class="textArimo blackArimo big-font-size">info@email.com</a>
-                </div> 
+               
 
 
             <!-- Here Form + Img -->
@@ -158,102 +170,109 @@
                                 <input required type="text" placeholder="Your Phone" class="form-input">
                                 <textarea name="Clien Message" id="" cols="10" rows="10" class="form-input textarea-styling"
                                     placeholder="Your Message"></textarea>
-                                <button type="button" class="main-btn form-btn">Send Message <span><img src="./icons/paper-plane.svg"
+                                <button type="button" class="main-btn">Send Message <span><img src="./icons/paper-plane.svg"
                                             alt="arow"></span></button>
                             </form>
 
                             <div class="img-email-form"></div>
                         </div>
                     </div>
-                    <img src="./img/contact-form-img.jpg" alt="people Engineering" width="567px" height="595px">
+                    <img src="./img/contact-form-img.jpg" alt="people Engineering" >
                 </div>
                 
                 
         </div>
-      </section>
+    </section>
 
-      <footer>
-          <div class="footer-bg">
-              <div class="footer-color" >
-                  <div class="container">
+</main>
 
-                    <!-- Here Decorative Element -->
+<footer>
+    <div class="footer-bg">
+        <div class="footer-color">
+            <div class="container">
 
-                    <div class="dec-container footer-dec-el">
-                        <div class="dec-elem"></div>
+                <!-- Here Decorative Element -->
+
+                <div class="dec-container footer-dec-el">
+                    <div class="dec-elem au-dec-el"></div>
+                </div>
+
+                <!-- Here 4 blocks -->
+
+                <div class="flex-container-footer">
+
+                    <!-- Here Logo Footer + Descr-->
+
+                    <div class="logo-footer">
+                        <a href="#" class="logo"><img src="./img/Logo.svg" alt="logo" width="162px" height="85px"><a>
+                                <p class="textArimo logo-footer-descr">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua</p>
                     </div>
 
-                    <!-- Here 4 blocks -->
-
-                    <div class="flex-container-footer">
-                       
-                        <!-- Here Logo Footer + Descr-->
-                       
-                       <div class="logo-footer">
-                            <a href="#" class="logo"><img src="./img/Logo.svg" alt="logo" width="162px" height="85px"><a>
-                            <p class="textArimo logo-footer-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                            dolore magna aliqua</p>
+                    <!-- Here menu Block One -->
+                    <div>
+                        <div class="title-block-footer">
+                            <h4>Quick <span>Link</span></h4>
                         </div>
-                        
-                        <!-- Here menu Block One -->
-                        <div>
-                            <div class="title-block-footer">
-                                <h4>Quick <span>Link</span></h4>
-                            </div>
-                            <ul class="menu-footer">
-                                <li><a href="#" class="textArimo arrow-menu-footer">Home</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer" >About Us</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer">What We Do</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer">Portfolio</a>
-                                </li>
-                            </ul>
-                            
-                        </div>
+                        <ul class="menu-footer">
+                            <li><a href="#" class="textArimo arrow-menu-footer">Home</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">About Us</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">What We Do</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">Portfolio</a>
+                            </li>
+                        </ul>
 
-                        <!-- Here menu Block Second -->
-
-                        <div>
-                            <div class="title-block-footer">
-                                <h4>Quick <span>Link</span></h4>
-                            </div>
-                            <ul class="menu-footer">
-                                <li><a href="#" class="textArimo arrow-menu-footer">Lorem</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer" >Lorem Ipsum</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer">Lorem Ipsum</a></li>
-                                <li><a href="#" class="textArimo arrow-menu-footer">Lorem Ipsum</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Here menu Block Three ( Contact) -->
-
-                        <div class="contact-block-footer">
-                            <div class="title-block-footer">
-                                <h4>Quick <span>Link</span></h4>
-                            </div>
-                            <ul class="menu-footer">
-                                <li><a href="tel:+2513411140" class="textArimo phone-footer">+2513411140</a></li>
-                                <li><a href="email:info@email.com" class="textArimo email-footer" >info@email.com</a></li>
-                            </ul>
-                            
-                        </div>
                     </div>
 
-                    <!-- Here COPYRIGHT Dec Element + Text -->
+                    <!-- Here menu Block Second -->
 
-                    <div class="dec-container">
-                        <div class="dec-elem coryrt-dec-elem">
-                            <div class="container">
-                                <p class="copyright-descr">COPYRIGHT © 2021 STS Structural Engineering Business, INC. ALL RIGHTS RESERVED.</p>
-                            </div>
+                    <div>
+                        <div class="title-block-footer">
+                            <h4>Quick <span>Link</span></h4>
                         </div>
+                        <ul class="menu-footer">
+                            <li><a href="#" class="textArimo arrow-menu-footer">Lorem</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">Lorem Ipsum</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">Lorem Ipsum</a></li>
+                            <li><a href="#" class="textArimo arrow-menu-footer">Lorem Ipsum</a>
+                            </li>
+                        </ul>
                     </div>
 
-                  </div>
-              </div>
-          </div>
-      </footer>
-  </main>
+                    <!-- Here menu Block Three ( Contact) -->
+
+                    <div class="contact-block-footer">
+                        <div class="title-block-footer">
+                            <h4>Quick <span>Link</span></h4>
+                        </div>
+                        <ul class="menu-footer">
+                            <li><a href="tel:+2513411140" class="textArimo phone-footer">+2513411140</a></li>
+                            <li><a href="email:info@email.com" class="textArimo email-footer">info@email.com</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Here COPYRIGHT Dec Element + Text -->
+
+                <div class="dec-container">
+                    <div class="dec-elem coryrt-dec-elem">
+                        <div class="container">
+                            <p class="copyright-descr">COPYRIGHT © 2021 STS Structural Engineering Business,
+                                INC. ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

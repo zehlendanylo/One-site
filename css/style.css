@@ -417,8 +417,9 @@ body, html {
         margin-bottom: 60px;
   }
 
-  .column-gap {
-      column-gap: 154px;
+  .contact-items {
+      display: flex;
+        column-gap: 154px;
   }
 
   .big-font-size {
@@ -605,9 +606,6 @@ body, html {
         resize: none;
         height: 68px;
     }
-    .form-btn {
-        margin-top: 37px;
-    }
 
     /* Here form mail grey img */
     
@@ -664,7 +662,7 @@ body, html {
 
 .form_img {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 67px;
     margin-top: 60px;
@@ -1335,7 +1333,7 @@ border-right: none;
 }
 
 .content-block-left {
-    width: 55%;
+    /* width: 55%; */
 }
 .blockleft-img {
     display: flex;
@@ -1700,4 +1698,9 @@ border-right: none;
 }
 .descr-red-title > h3 {
     white-space: nowrap;
+}
+
+.form_img > img {
+    width: 567px;
+    height: 595px;
 }

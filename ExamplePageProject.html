@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Raleway:wght@400;600;700&display=swap"
         rel="stylesheet">
     <title>STS Structural Engineering Business</title>
@@ -16,64 +17,69 @@
 
     <!-- Here Heder -->
 
-    <header>
+<header>
 
-        <div class="header-bg-block">
-            <div class="container">
-                <div class="nav-set">
+    <div class="header-bg-block">
+        <div class="container">
+            <div class="nav-set">
 
-                    <!-- Here Logo -->
+                <!-- Here Logo -->
 
-                    <a href="./index.html" class="logo"><img src="./img/Logo.svg" alt="logo" width="162px"
-                            height="85px"><a>
+                <a href="#" class="logo"><img src="./img/Logo.svg" alt="logo"><a>
 
-                            <!-- Here Menu -->
+                        <!-- Here Menu -->
 
-                    <nav role="navigation">
-                        <ul class="navigation">
-                            <li class="navigation-item"><a href="./index.html">Home</a></li>
-                            <li class="navigation-item"><a href="./OurTeam.html">About Us</a></li>
-                            <li class="navigation-item"><a href="./OurService.html">What We Do</a>
-                    
-                                <!-- Here menu dropdown -->
-                    
-                                <!-- <ul class="item-dropdown">
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                    </ul>
-                                         -->
-                            </li>
-                            <li class="navigation-item"><a href="./OurProject.html">Portfolio</a>
-                    
-                                <!-- Here  menu  dropdown -->
-                    
-                                <!-- <ul class="item-dropdown">
-                                                        <li><a href="./OurProject.html">Our Project</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                        <li><a href="#">Services</a></li>
-                                                    </ul> -->
-                    
-                            </li>
-                            <li class="navigation-item"><a href="./ContactUs.html">Contact Us</a>
-                    
-                                <!-- Here  menu  dropdown -->
-                    
-                                <ul class="item-dropdown">
-                                    <li><a href="./AboutUs.html">About Us Page</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Services</a></li>
-                                </ul>
-                    
-                            </li>
-                        </ul>
-                    </nav>
+                        <nav class="nav" role="navigation">
+                            <ul class="navigation">
+                                <li class="navigation-item"><a href="./index.html">Home</a></li>
+                                <li class="navigation-item"><a href="./OurTeam.html">About Us</a></li>
+                                <li class="navigation-item"><a href="./OurService.html">What We Do</a>
 
-                </div>
+                                    <!-- Here menu dropdown -->
+
+                                    <!-- <ul class="item-dropdown">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+                         -->
+                                </li>
+                                <li class="navigation-item"><a href="./OurProject.html">Portfolio</a>
+
+                                    <!-- Here  menu  dropdown -->
+
+                                    <!-- <ul class="item-dropdown">
+                                        <li><a href="./OurProject.html">Our Project</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul> -->
+
+                                </li>
+                                <li class="navigation-item"><a href="./ContactUs.html">Contact Us</a>
+
+                                    <!-- Here  menu  dropdown -->
+
+                                    <ul class="item-dropdown">
+                                        <li><a href="./AboutUs.html">About Us Page</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Here Burger -->
+
+                        <div class="here-burger burger">
+                            <span class=" burger-middel-line"></span>
+                        </div>
+
             </div>
         </div>
+    </div>
 
-    </header>
+</header>
 
     <main>
 
@@ -130,9 +136,9 @@
                                 </div>
                         
                                 <div class="switch-three-img">
+                                    <a href="#"><img src="./img/project-bg-one.jpg" alt="Engineering" class="switch-img-mob"></a>
                                     <a href="#"><img src="./img/project-bg-one.jpg" alt="Engineering"></a>
-                                    <a href="#"><img src="./img/project-bg-one.jpg" alt="Engineering"></a>
-                                    <a href="#"><img src="./img/project-bg-one.jpg" alt="Engineering"></a>
+                                    <a href="#"><img src="./img/project-bg-one.jpg" alt="Engineering" class="switch-img-mob"></a>
                                     
                                 </div>
                         
@@ -422,7 +428,8 @@
                         </div>
                         <ul class="menu-footer">
                             <li><a href="tel:+2513411140" class="textArimo phone-footer">+2513411140</a></li>
-                            <li><a href="email:info@email.com" class="textArimo email-footer">info@email.com</a></li>
+                            <li><a href="email:info@email.com" class="textArimo email-footer">info@email.com</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -433,8 +440,8 @@
                 <div class="dec-container">
                     <div class="dec-elem coryrt-dec-elem">
                         <div class="container">
-                            <p class="copyright-descr">COPYRIGHT © 2021 STS Structural Engineering Business, INC. ALL
-                                RIGHTS RESERVED.</p>
+                            <p class="copyright-descr">COPYRIGHT © 2021 STS Structural Engineering Business,
+                                INC. ALL RIGHTS RESERVED.</p>
                         </div>
                     </div>
                 </div>
@@ -443,6 +450,9 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
