@@ -313,7 +313,7 @@ body, html {
         color: #fff;
         margin-bottom: 26px;
     }
-        .main-title > span {
+        .main-norm-title {
             font-weight: normal;
             position: relative;  
         }
@@ -416,6 +416,8 @@ body, html {
         margin-top: 60px;
         margin-bottom: 60px;
   }
+
+
 
   .contact-items {
       display: flex;
@@ -640,6 +642,7 @@ body, html {
     margin-top: 51px;
     align-items: center;
     gap: 33px;
+    white-space: nowrap;
 } 
     .ctc-block{
         display: flex;
@@ -781,6 +784,15 @@ body, html {
 
     .contact-block-footer {
         position: relative;
+    }
+
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        row-gap: 70px;
     }
     .phone-footer::before {
         content: "";
@@ -1332,9 +1344,6 @@ border-right: none;
     gap: 40px;
 }
 
-.content-block-left {
-    /* width: 55%; */
-}
 .blockleft-img {
     display: flex;
     gap: 20px;
@@ -1401,6 +1410,7 @@ border-right: none;
     flex-direction: column;
     justify-content: center;
     padding: 53px 37px;
+    text-align: center;
 }
 
 .cto-block > h3 {
@@ -1411,13 +1421,14 @@ border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 83px;
+    gap: 43px;
 }
 .cto-contact > .ctc-container > .ctc-block {
     width: 42px;
     height: 42px;
     background-color: rgba(255, 255, 255, 0.5);
     border: 0;
+    padding: 11px;
 }
 .prew-project {
     background-color: #F8F9FA;
@@ -1704,3 +1715,4 @@ border-right: none;
     width: 567px;
     height: 595px;
 }
+

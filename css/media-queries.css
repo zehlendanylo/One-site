@@ -61,7 +61,8 @@
         border-right: none;
     }
      .our-project > .navigation-item:last-child {
-        border-bottom: none;  
+        border-bottom: none;
+        padding-right: 50px;
     }
 
     /* !Here Contact Us Page */
@@ -458,6 +459,24 @@
 
 @media only screen and (max-width: 480px) { 
     
+    /* !Here Footer Dec */
+
+     .dec-elem {
+       width: 90%;
+       left: 3.5rem;
+    }
+
+    .dec-elem::before {
+       left: -5rem;
+    }
+
+    .copyright-descr {
+       position: absolute;
+        left: -25px;
+       
+    }
+    
+    
     /* !Here Home page! */
 
     .container {
@@ -560,6 +579,7 @@
 
     .adaptive {
         overflow: visible;
+        margin-top: 25px;
     }
     
     /* /baner */
@@ -660,12 +680,12 @@
     /* !Here Our Team Page  */
 
     .dec-elem-right {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .dec-elem-left {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .sub-title {
         margin-top: 5px;
@@ -677,6 +697,10 @@
     .red-sub-title {
         margin-top: 1px;
         font-size: 18px;
+    }
+
+    .big-font-size {
+        white-space: normal;
     }
 
     /* !Here Our Service Page */
@@ -715,6 +739,9 @@
    .form_img > img {
        width: 100%;
        height: 345px;
+   }
+   .title-other-pg > .dec-elem-left {
+       left: 0;
    }
 
 
@@ -758,5 +785,22 @@
     .footer-bg {
         height: 1116px;
     }
+
+    /* !Here Styling Our Services page */
+
+
+    .service-row-gap {
+    row-gap: 180px;
+    }
+    .service-descr {
+        bottom: -180px;
+    }
+
+    /* !Here Styling Our Team Page */
+
+    .cnt-descr-img > img {
+    width: 100%;
+    height: 330px;
+}
 }
 
