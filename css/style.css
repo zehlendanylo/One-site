@@ -195,6 +195,10 @@ body, html {
     }
 
     .op-hero {
+        background: url(../img/OurProject-hero.jpg) center center/cover no-repeat;
+    }
+
+    .os-hero {
         background: url(../img/service-h-banner.jpg) center center/cover no-repeat;
     }
 .first-banner-color {
@@ -1183,6 +1187,10 @@ border-right: none;
 
 .examplePP-hero {
     background: url(../img/ExamplePageProject-hero.jpg) center center/cover no-repeat;
+}
+
+.examplePS-hero {
+    background: url(../img/examplePS-hero.jpg) center center/cover no-repeat;
 }
 
 .h111111111111 {

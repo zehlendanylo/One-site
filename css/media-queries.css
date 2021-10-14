@@ -718,10 +718,7 @@
     .sub-title {
         margin-top: 5px;
     }
-    
-    .ot-hero {
-        background: url(../img/mob-adapt-banners/Our-Team.jpg) center center/cover no-repeat;
-    }                            
+                               
     .red-sub-title {
         margin-top: 1px;
         font-size: 18px;
@@ -732,9 +729,6 @@
     }
 
     /* !Here Our Service Page */
-    .op-hero {
-        background: url(../img/mob-adapt-banners/Our-Services-mob.jpg) center center/cover no-repeat;
-    }
     .category-title {
         font-size: 22px;
     }
@@ -762,7 +756,7 @@
 
     /* !Here Contact Us Page */
     .main-btn {
-        margin-top: 30px;
+        margin-top: 88px;
     }
    .form_img > img {
        width: 100%;
@@ -808,11 +802,52 @@
        width: 100%;
    }
 
+   .cu-hero {
+       background: url(../img/mob-adapt-banners/AboutUs-FirstBanner.jpg) center center/cover no-repeat;
+   }
+
    /* !Here Styling Example Page Service */ 
 
    .descr-block > img {
        width: 119%;
    }
+
+   /* !Mobile Adapting Banners */
+
+    .ot-hero {
+        background: url(../img/mob-adapt-banners/Our-Team.jpg) center center/cover no-repeat;
+    } 
+
+    .op-hero {
+        background: url(../img/mob-adapt-banners/examplePS-hero.jpg) center center/cover no-repeat;
+    }
+
+    .examplePP-hero {
+        background: url(../img/mob-adapt-banners/OurProject-ProjectDesc.jpg) center center/cover no-repeat;
+    }
+
+    .examplePS-hero {
+        background: url(../img/mob-adapt-banners/examplePS-hero.jpg) center center/cover no-repeat;
+    }
+
+    .os-hero {
+         background: url(../img/mob-adapt-banners/Our-Services-mob.jpg) center center/cover no-repeat;
+    }
+
+    .cbr-grey-block {
+        text-align: center;
+        align-items: center;
+    }
+
+    .red-dec-line {
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+
+    .ourProject_btn {
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -850,6 +885,6 @@
     }
     .cloud {
         width: 60%;
-    }
+    }  
 }
 
